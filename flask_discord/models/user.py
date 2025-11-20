@@ -63,6 +63,8 @@ class User(DiscordModelsBase):
         self.bot = self._payload.get("bot", False)
         self.mfa_enabled = self._payload.get("mfa_enabled")
         self.locale = self._payload.get("locale")
+        self.banner = self._payload.get("banner")
+        self.accent_color = self._payload.get("accent_color")
         self.verified = self._payload.get("verified")
         self.email = self._payload.get("email")
         self.flags = self._payload.get("flags")
